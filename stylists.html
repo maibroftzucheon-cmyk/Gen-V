@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gen V | Stylists</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav>
+        <a href="index.html" class="logo">Gen V</a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stylists.html">Stylists</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="journal.html">Journal</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Stylists Hero -->
+    <section class="stylists-page-hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">GEN V STYLISTS</p>
+
+            <h1>Discover your next stylist.</h1>
+
+            <p>
+                Explore talented Nigerian hairstylists and
+                discover their unique artistry.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Stylists -->
+    <section class="stylists-section">
+
+        <div class="section-heading">
+            <span></span>
+            <h2>Featured Stylists</h2>
+            <span></span>
+        </div>
+
+        <p>
+            Find hairstylists specializing in different
+            styles and techniques.
+        </p>
+
+        <div class="stylist-filters">
+
+            <button class="filter-button active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-button" data-filter="braids">
+                Braids
+            </button>
+
+            <button class="filter-button" data-filter="natural">
+                Natural Hair
+            </button>
+
+            <button class="filter-button" data-filter="wigs">
+                Wig Styling
+            </button>
+
+            <button class="filter-button" data-filter="locs">
+                Locs
+            </button>
+
+        </div>
+
+        <div class="stylist-search">
+
+            <input
+                type="text"
+                id="stylistSearch"
+                placeholder="Search for a stylist..."
+                aria-label="Search for a stylist"
+            >
+
+            <button id="clearSearch" class="clear-search">
+                Clear
+            </button>
+
+        </div>
+
+        <p id="stylistCount" class="stylist-count">
+            4 stylists found
+        </p>
+
+        <p id="noResults" class="no-results">
+            No stylists found. Try another name or category.
+        </p>
+
+        <div class="stylist-grid">
+
+            <!-- Amara -->
+            <article class="stylist-card" data-category="braids">
+
+                <img
+                    src="images/amara.jpg"
+                    alt="Braided hairstyle by Amara Styles"
+                >
+
+                <div class="card-content">
+
+                    <h3>Amara Styles</h3>
+
+                    <p>Braids · Lagos</p>
+
+                    <a href="amara.html" class="portfolio-button">View Portfolio</a>
+
+                </div>
+
+            </article>
+
+            <!-- Crown -->
+            <article class="stylist-card" data-category="natural">
+
+                <img
+                    src="images/crown.jpg"
+                    alt="Natural hairstyle by Crown and Co."
+                >
+
+                <div class="card-content">
+
+                    <h3>Crown &amp; Co.</h3>
+
+                    <p>Natural Hair · Abuja</p>
+
+                    <a href="crown.html" class="portfolio-button">View Portfolio</a>
+                        
+                    
+
+                </div>
+
+            </article>
+
+            <!-- Mocha -->
+            <article class="stylist-card" data-category="wigs">
+
+                <img
+                    src="images/mocha.jpg"
+                    alt="Wig styling by Mocha Studio"
+                >
+
+                <div class="card-content">
+
+                    <h3>Mocha Studio</h3>
+
+                    <p>Wig Styling · Enugu</p>
+
+                    <a href="mocha.html" class="portfolio-button">View Portfolio</a>
+
+                </div>
+
+            </article>
+
+            <!-- Golden Touch -->
+            <article class="stylist-card" data-category="locs">
+
+                <img
+                    src="images/golden.jpg"
+                    alt="Loc hairstyle by Golden Touch"
+                >
+
+                <div class="card-content">
+
+                    <h3>Golden Touch</h3>
+
+                    <p>Locs &amp; Styling · Onitsha</p>
+
+                    <a href="golden.html" class="portfolio-button">View Portfolio</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h2>Gen V</h2>
+
+            <p>
+                A new generation of beauty.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="stylists.html">Stylists</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="journal.html">Journal</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Gen V. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

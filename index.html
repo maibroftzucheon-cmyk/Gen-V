@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gen V | A New Generation of Beauty</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<header>
+		<nav>
+			<a href="index.html" class="logo">Gen V</a>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stylists.html">Stylists</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="journal.html">Journal</a></li>
+</ul>
+		</nav>
+	</header>
+
+	<!-- Hero section -->
+	<main>
+		<section id="home" class="hero">
+			<div class="hero-content">
+				<p class="eyebrow">A NEW GENERATION OF BEAUTY</p>
+				<h1>Discover your next signature style.</h1>
+				<p>
+					Explore beautiful hairstyles and discover the artistry
+					of Nigerian hairstylists.
+				</p>
+				<a href="#stylists" class="hero-button">Explore stylists</a>
+			</div>
+		</section>
+
+		<!-- Featured stylists -->
+		<section id="stylists" class="stylists-section">
+			<div class="section-heading">
+    <span></span>
+    <h2>Featured Stylists</h2>
+    <span></span>
+</div>
+			<p>Discover talented hairstylists and their creative work.</p>
+
+<div class="stylist-filters">
+    <button class="filter-button active" data-filter="all">All</button>
+    <button class="filter-button" data-filter="braids">Braids</button>
+    <button class="filter-button" data-filter="natural">Natural Hair</button>
+    <button class="filter-button" data-filter="wigs">Wig Styling</button>
+    <button class="filter-button" data-filter="locs">Locs</button>
+</div>
+
+			
+<div class="stylist-search">
+    <input
+        type="text"
+        id="stylistSearch"
+        placeholder="Search for a stylist..."
+        aria-label="Search for a stylist"
+    >
+
+    <button id="clearSearch" class="clear-search">
+        Clear
+    </button>
+</div>
+<p id="stylistCount" class="stylist-count">4 stylists found</p>
+<p id="noResults" class="no-results">
+    No stylists found. Try another name or category.
+</p>
+<div class="stylist-grid">
+
+    <article class="stylist-card" data-category="braids">
+        <img src="images/amara.jpg" alt="Braided hairstyle by Amara Styles">
+
+        <div class="card-content">
+            <h3>Amara Styles</h3>
+            <p>Braids · Lagos</p>
+            <a href="amara.html" class="portfolio-button">View Portfolio</a>
+        </div>
+    </article>
+
+    <article class="stylist-card" data-category="natural">
+        <img src="images/crown.jpg" alt="Natural hairstyle by Crown and Co.">
+
+        <div class="card-content">
+            <h3>Crown &amp; Co.</h3>
+            <p>Natural Hair · Abuja</p>
+            <a href="crown.html" class="portfolio-button">View Portfolio</a>
+        </div>
+    </article>
+
+    <article class="stylist-card" data-category="wigs">
+        <img src="images/mocha.jpg" alt="Wig styling by Mocha Studio">
+
+        <div class="card-content">
+            <h3>Mocha Studio</h3>
+            <p>Wig Styling · Enugu</p>
+            <a href="mocha.html" class="portfolio-button">View Portfolio</a>
+        </div>
+    </article>
+
+    <article class="stylist-card" data-category="locs">
+        <img src="images/golden.jpg" alt="Loc hairstyle by Golden Touch">
+
+        <div class="card-content">
+            <h3>Golden Touch</h3>
+            <p>Locs &amp; Styling · Onitsha</p>
+            <a href="golden.html" class="portfolio-button">View Portfolio</a>
+        </div>
+    </article>
+
+</div>
+
+
+			</div>
+		</section>
+<!-- Booking Section -->
+<section id="booking" class="booking-section">
+
+    <div class="booking-content">
+
+        <p class="eyebrow">BOOK AN APPOINTMENT</p>
+
+        <h2>Book with Amara Styles.</h2>
+
+        <p class="booking-intro">
+            Tell us a little about the style you're interested in
+            and we'll help you take the next step.
+        </p>
+
+        <form class="booking-form">
+
+            <div class="form-group">
+                <label for="clientName">Your Name</label>
+                <input
+                    type="text"
+                    id="clientName"
+                    name="clientName"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="clientPhone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="clientPhone"
+                    name="clientPhone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="hairstyle">Hairstyle</label>
+                <input
+                    type="text"
+                    id="hairstyle"
+                    name="hairstyle"
+                    placeholder="e.g. Knotless braids"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="appointmentDate">Preferred Date</label>
+                <input
+                    type="date"
+                    id="appointmentDate"
+                    name="appointmentDate"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="booking-button">
+                Request Appointment
+            </button>
+
+        </form>
+<p id="bookingMessage" class="booking-message" aria-live="polite"></p>
+    </div>
+
+</section>
+        <!-- Amara Styles Portfolio -->
+<section id="amara-portfolio" class="portfolio-section">
+
+    <div class="portfolio-content">
+
+        <p class="eyebrow">AMARA STYLES</p>
+
+        <h2>Braids with a signature touch.</h2>
+
+        <p>
+            Explore selected braid styles created by Amara Styles
+            in Lagos.
+        </p>
+
+        <div class="portfolio-grid">
+
+    <img src="images/amara 1.jpg" alt="Braided hairstyle by Amara Styles">
+    <img src="images/amara (2).jpg" alt="Braided hairstyle by Amara Styles">
+    <img src="images/amara3.jpg" alt="Braided hairstyle by Amara Styles">
+
+</div>
+
+<div class="stylist-details">
+
+    <div class="detail-item">
+        <span>LOCATION</span>
+        <strong>Lagos, Nigeria</strong>
+    </div>
+
+    <div class="detail-item">
+        <span>SPECIALTY</span>
+        <strong>Braids &amp; Protective Styles</strong>
+    </div>
+
+    <div class="detail-item">
+        <span>PRICE RANGE</span>
+        <strong>₦25,000 – ₦80,000</strong>
+    </div>
+
+</div>
+<div class="stylist-contact">
+
+    <p class="contact-title">CONNECT WITH AMARA</p>
+
+    <div class="contact-links">
+    <a
+        href="https://www.instagram.com/"
+        class="contact-button"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Instagram
+    </a>
+
+    <a
+        href="https://wa.me/"
+        class="contact-button"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        WhatsApp
+    </a>
+
+    <a
+        href="#booking"
+        class="contact-button"
+    >
+        Book Appointment
+    </a>
+</div>
+
+</div>
+<a href="#stylists" class="portfolio-back">
+    ← Back to Stylists
+</a>
+
+    </div>
+
+</section>
+<!-- About Gen V -->
+<section id="about" class="about-section">
+
+    <div class="about-content">
+
+        <p class="eyebrow">ABOUT GEN V</p>
+
+        <h2>A new generation of beauty.</h2>
+
+        <p>
+            Gen V is a beauty platform created to help people discover
+            hairstylists, explore hairstyles, learn about hair care,
+            and find products that fit their journey.
+        </p>
+
+        <a href="#stylists" class="about-button">
+            Explore hairstyles
+        </a>
+
+    </div>
+
+</section>
+		<!-- Other homepage sections -->
+		<section id="products" class="products-section">
+
+    <div class="section-heading">
+        <span></span>
+        <h2>Hair-care Products</h2>
+        <span></span>
+    </div>
+
+    <p class="section-intro">
+        Discover products that can help you care for and maintain
+        beautiful, healthy-looking hair.
+    </p>
+
+    <div class="product-grid">
+
+        <article class="product-card">
+            <div class="product-placeholder">
+                <span>Product Image</span>
+            </div>
+
+            <div class="product-content">
+                <h3>Moisture & Shine</h3>
+                <p>Hair care · Moisturising</p>
+                <a href="journal.html#routine" class="journal-link">Read Article →</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-placeholder">
+                <span>Product Image</span>
+            </div>
+
+            <div class="product-content">
+                <h3>Natural Hair Care</h3>
+                <p>Hair care · Natural hair</p>
+                <a href="journal.html#natural-hair" class="journal-link">Read Article →</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+    <div class="product-placeholder">
+        <span>Product Image</span>
+    </div>
+
+    <div class="product-content">
+        <h3>Scalp Care</h3>
+        <p>Hair care · Scalp</p>
+        <a href="journal.html#scalp-care" class="journal-link">Read Article →</a>
+    </div>
+</article>
+
+    </div>
+
+</section>
+<!-- Hairstylist call-to-action -->
+<section class="stylist-cta">
+
+    <div class="cta-content">
+
+        <p class="eyebrow">FOR HAIRSTYLISTS</p>
+
+        <h2>Let your artistry be discovered.</h2>
+
+        <p>
+            Showcase your hairstyles, connect with new clients,
+            and build your presence on Gen V.
+        </p>
+
+        <a href="#stylists" class="cta-button">Join Gen V</a>
+
+    </div>
+
+</section>
+		<section id="journal" class="journal-section">
+
+    <div class="section-heading">
+        <span></span>
+        <h2>Hair-care Journal</h2>
+        <span></span>
+    </div>
+
+    <p class="section-intro">
+        Simple guides, inspiration, and ideas for your hair-care journey.
+    </p>
+
+    <div class="journal-grid">
+
+        <article class="journal-card">
+            <span class="article-category">HAIR CARE</span>
+            <h3>Building a simple hair-care routine</h3>
+            <p>
+                Learn the basic steps you can consider when creating
+                a simple routine for your hair.
+            </p>
+            <a href="journal.html#routine" class="journal-link">Read Article →</a>
+        </article>
+
+        <article class="journal-card">
+            <span class="article-category">INSPIRATION</span>
+            <h3>Finding a hairstyle that fits your style</h3>
+            <p>
+                Explore ideas that can help you discover hairstyles
+                that match your personal taste.
+            </p>
+            <a href="journal.html#choosing-a-style" class="journal-link">Read Article →</a>
+        </article>
+
+        <article class="journal-card">
+            <span class="article-category">STYLING</span>
+            <h3>Questions to ask your hairstylist</h3>
+            <p>
+                Useful questions to consider before choosing a
+                hairstyle or booking an appointment.
+            </p>
+            <a href="journal.html#stylist-questions" class="journal-link">Read Article →</a>
+        </article>
+
+    </div>
+
+</section>
+	</main>
+
+	<!-- Footer -->
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>Gen V</h2>
+            <p>A new generation of beauty.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#stylists">Stylists</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#journal">Journal</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Gen V. All rights reserved.</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
